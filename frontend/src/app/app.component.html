@@ -1,0 +1,24 @@
+<!-- <body>
+
+  <h1>My Awesome app</h1>
+
+  <button (click)="this.componentToShow = 'login'">Login</button>
+
+  <app-login-form *ngIf="componentToShow == 'login'"/>
+  <app-welcome-content *ngIf="componentToShow == 'welcome'"/>
+  <app-protected-content *ngIf="componentToShow == 'protected'"/>
+
+</body>
+ -->
+
+ <div>
+  <div *ngIf="componentToShow === 'welcome'">
+    <app-login-form></app-login-form>
+  </div>
+  <div *ngIf="componentToShow === 'protected'">
+    <button class="logout-button" (click)="confirmLogout()">
+      <i class="fas fa-sign-out-alt"></i>
+    </button>
+    <app-protected-content></app-protected-content>
+  </div>
+</div>

@@ -1,0 +1,139 @@
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+
+  .app-header {
+    background-color: #007bff;
+    margin-bottom: 50px;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .styled-select {
+        width: 200px;
+        height: 40px; 
+        border-radius: 4px; 
+        border: 1px solid #ccc; 
+        padding: 5px 10px; 
+        font-size: 16px; 
+      }
+      
+      .styled-select:focus {
+        border-color: #007bff; 
+        outline: none; 
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); 
+      }
+
+      .styled-select option {
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+
+        &:first-of-type {
+          background-color: #28a745;
+        }
+
+        &:last-of-type {
+          background-color: #dc3545;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      color: #fff;
+      margin-right: 5px;
+
+      &:first-of-type {
+        background-color: #ffc107;
+      }
+
+      &:last-of-type {
+        background-color: #dc3545;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

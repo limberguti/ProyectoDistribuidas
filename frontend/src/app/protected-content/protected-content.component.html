@@ -1,0 +1,21 @@
+
+<div class="app-container">
+  <header class="app-header">
+    <h1>MATRICULAS4FUN</h1>
+  </header>
+  <div class="app-main">
+    <nav class="app-menu">
+      <ul>
+        <li><a [routerLink]="['/usuarios']"><i class="fas fa-users"></i>Usuarios</a></li>
+        <li><a [routerLink]="['/cursos']"><i class="fas fa-book"></i>Cursos</a></li>
+        <li><a [routerLink]="['/inscripcion']"><i class="fas fa-user-plus"></i>Inscripción</a></li>
+      </ul>
+    </nav>
+    <section class="app-content">
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+  <footer class="app-footer">
+    <p>&copy; 2024 Grupo 1  Todos los derechos reservados.</p>
+  </footer>
+</div>

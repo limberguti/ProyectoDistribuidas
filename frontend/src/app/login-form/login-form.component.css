@@ -1,0 +1,146 @@
+
+
+body {
+  background-color: #007bff;
+}
+/*
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 40px auto;
+}*/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; 
+  margin: 40px auto; 
+  background-image: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
+  background-size: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.google-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285F4; /* Color de fondo de Google */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Quitar el subrayado del enlace */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 500; /* Peso de la fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Efecto de transición en el color de fondo */
+  margin-top: 20px; /* Margen superior para separar el botón del resto del contenido */
+}
+
+.google-btn:hover {
+  background-color: #357AE8; /* Color de fondo en el hover */
+}
+
+.google-btn i {
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+  font-size: 20px; /* Tamaño del ícono */
+}
+
+h2 {
+  
+  margin-bottom: 150px; /* Separación entre el título y el botón */
+  color: #357AE8;
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  font-family: 'Arial', sans-serif;
+
+  .app-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .app-main {
+    display: flex;
+    flex: 1;
+
+    .app-menu {
+      width: 200px;
+      padding: 20px;
+      border-right: 1px solid #ccc; 
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); 
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 15px;
+
+          a {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333; 
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            i {
+              margin-right: 10px; 
+            }
+
+            &:hover {
+              background-color: #007bff; 
+              color: #f8f9fa; 
+            }
+          }
+        }
+      }
+    }
+
+    .app-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #f8f9fa; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+  }
+
+  .app-footer {
+    background-color: #007bff; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+  }
+}

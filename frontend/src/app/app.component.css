@@ -1,0 +1,20 @@
+.logout-button {
+    background-color: #d9534f; /* Rojo para indicar una acción de salida */
+    color: white; /* Color del icono en blanco */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno para aumentar el tamaño del botón */
+    font-size: 16px; /* Tamaño de fuente para el icono */
+    cursor: pointer; /* Cursor de mano para indicar que es clicable */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    margin-top: 10px; /* Espacio superior para separar del contenido */
+  }
+  
+  .logout-button i {
+    margin-right: 5px; /* Espacio entre el icono y el texto, si añades texto */
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c; /* Un rojo más oscuro cuando el ratón está sobre el botón */
+  }
+  

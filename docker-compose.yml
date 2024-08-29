@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+ 
+
+  msvc-oauth2-server:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    #image: limbergr2102/limbergutierrez-msvc-cursos:latest
+    mem_limit: 512m
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_APPLICATION_NAME: Backend
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_OPAQUE_TOKEN_INTROSPECTION_URI: https://www.googleapis.com/
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_OPAQUE_TOKEN_CLIENT_ID: "93178244737-cv5lv6h0juf5ku732oalo01rct2gujsi.apps.googleusercontent.com"
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_OPAQUE_TOKEN_CLIENT_SECRET: "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"
+    
+    networks:
+      - msvc-network
+
+  
+  frontend:
+    build: 
+      context: /frontend
+      dockerfile: Dockerfile
+    #image: limbergr2102/limbergutierrez-front-cursos:latest
+    ports:
+      - "4200:4200"
+    networks:
+      - msvc-network
+    environment:
+      - NODE_ENV=development
+
+networks:
+  msvc-network:
+    driver: bridge
+
+
